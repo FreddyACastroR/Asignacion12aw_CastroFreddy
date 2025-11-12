@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paque parezca telefono, collage de pinterest mas bien */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f4f4f4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Contenedor */
+.wrap {
+    width: 100%;
+    max-width: 430px;
+    background: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.brand {
+    padding: 16px 16px 8px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand h1 {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-size: 28px;
+}
+
+
+.brand .Nombre {
+    font-weight: 300;
+    color: #9c9c9c;
+}
+
+.brand .Apellido {
+    font-weight: 700;
+    color: #111;
+}
+
+
+.imagenes {
+    padding: 10px 8px 16px;
+    column-count: 3;
+    column-gap: 8px;
+}
+
+
+@media (max-width: 480px) {
+    .imagenes {
+        column-count: 2;
+    }
+}
+
+
+.imagen {
+    break-inside: avoid;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.imagen img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
